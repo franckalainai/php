@@ -35,6 +35,16 @@ while(true){
     }
 }
 
+echo "le magasin est ouvert de";
+foreach($creneaux as $k => $creneau){
+    if($k > 0){
+        echo ' et de';
+    }
+    echo " {$creneau[0]}h à {$creneau[1]}h";
+}
+
+/*
+
 $heure = (int)readline("a quelle heure voulez vous visiter le magasin ");
 $creneautrouve = false;
 
@@ -50,3 +60,5 @@ if($creneautrouve){
 }else{
     echo "le magasin est ferme";
 }
+
+*/
